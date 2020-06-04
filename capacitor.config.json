@@ -1,6 +1,6 @@
 {
   "appId": "io.ionic.starter",
-  "appName": "ocw-prototype",
+  "appName": "Ionic React Demo",
   "bundledWebRuntime": false,
   "npmClient": "npm",
   "webDir": "build",
