@@ -1,5 +1,6 @@
 {
   "name": "ionic-react-demo",
+  "homepage": "https://maykinmedia.github.io/ionic-react-demo/",
   "version": "0.0.1",
   "private": true,
   "dependencies": {
