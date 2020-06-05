@@ -7,7 +7,8 @@ import {
     IonIcon,
     IonItem,
     IonLabel,
-    IonList, IonPage,
+    IonList,
+    IonPage,
     IonTitle,
     IonToolbar
 } from '@ionic/react';

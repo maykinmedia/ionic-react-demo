@@ -1,9 +1,20 @@
 import React from 'react';
 import {
     IonButtons,
-    IonCard, IonCardHeader, IonCardSubtitle, IonCol, IonContent,
+    IonCard,
+    IonCardHeader,
+    IonCardSubtitle,
+    IonCol,
+    IonContent,
     IonGrid,
-    IonHeader, IonImg, IonListHeader, IonMenuButton, IonPage, IonRow, IonTitle, IonToolbar
+    IonHeader,
+    IonImg,
+    IonListHeader,
+    IonMenuButton,
+    IonPage,
+    IonRow,
+    IonTitle,
+    IonToolbar
 } from '@ionic/react';
 import './HomePage.css';
 
