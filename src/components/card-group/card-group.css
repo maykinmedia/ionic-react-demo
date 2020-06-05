@@ -1,0 +1,19 @@
+.card-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 24px;
+    margin-inline-start: 16px;
+    margin-inline-end: 16px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.card-group ion-card {
+    width: 100%;
+    margin: 0;
+}
+
+.card-group + .card-group {
+    margin-top: 0;
+}

@@ -4,19 +4,23 @@ import {
     IonCard,
     IonCardHeader,
     IonCardSubtitle,
-    IonCol,
     IonContent,
-    IonGrid,
-    IonHeader,
-    IonImg,
+    IonHeader, IonIcon,
     IonListHeader,
     IonMenuButton,
     IonPage,
-    IonRow,
     IonTitle,
     IonToolbar
 } from '@ionic/react';
-import './HomePage.css';
+import CardGroup from '../../components/card-group/CardGroup';
+import {
+    newspaperOutline,
+    chatbubblesOutline,
+    calendarOutline,
+    personCircleOutline,
+    businessOutline, chatbubbleEllipsesOutline
+} from 'ionicons/icons';
+import Visual from '../../components/visual/Visual';
 
 const HomePage = () => {
     return (
@@ -33,182 +37,136 @@ const HomePage = () => {
 
             <IonContent>
                 <IonListHeader>Uitgelicht</IonListHeader>
-                <IonGrid>
-                    <IonRow>
-                        <IonCol>
-                            <IonCard routerLink="/theme">
-                                <IonImg src="http://placekitten.com/801/600"/>
-                                <IonCardHeader>
-                                    <IonCardSubtitle>Persactua</IonCardSubtitle>
-                                </IonCardHeader>
-                            </IonCard>
-                        </IonCol>
-                    </IonRow>
+                <CardGroup>
+                    <IonCard routerLink="/theme">
+                        <Visual icon={newspaperOutline}>
+                            <IonIcon color="light" icon={newspaperOutline}></IonIcon>
+                        </Visual>
+                        <IonCardHeader>
+                            <IonCardSubtitle>Persactua</IonCardSubtitle>
+                        </IonCardHeader>
+                    </IonCard>
 
-                    <IonRow>
-                        <IonCol>
-                            <IonCard routerLink="/theme">
-                                <IonImg src="http://placekitten.com/802/600"/>
-                                <IonCardHeader>
-                                    <IonCardSubtitle>
-                                        Social
-                                    </IonCardSubtitle>
-                                </IonCardHeader>
-                            </IonCard>
-                        </IonCol>
+                    <IonCard routerLink="/theme">
+                        <Visual icon={newspaperOutline}>
+                            <IonIcon color="light" icon={chatbubblesOutline}></IonIcon>
+                        </Visual>
+                        <IonCardHeader>
+                            <IonCardSubtitle>Social</IonCardSubtitle>
+                        </IonCardHeader>
+                    </IonCard>
 
-                        <IonCol>
-                            <IonCard routerLink="/theme">
-                                <IonImg src="http://placekitten.com/803/600"/>
-                                <IonCardHeader>
-                                    <IonCardSubtitle>
-                                        Kalender
-                                    </IonCardSubtitle>
-                                </IonCardHeader>
-                            </IonCard>
-                        </IonCol>
-                    </IonRow>
-                </IonGrid>
+                    <IonCard routerLink="/theme">
+                        <Visual icon={newspaperOutline}>
+                            <IonIcon color="light" icon={calendarOutline}></IonIcon>
+                        </Visual>
+                        <IonCardHeader>
+                            <IonCardSubtitle>Kalender</IonCardSubtitle>
+                        </IonCardHeader>
+                    </IonCard>
+                </CardGroup>
 
 
                 <IonListHeader>Bewindslieden en organisatie</IonListHeader>
-                <IonGrid>
-                    <IonRow>
-                        <IonCol>
-                            <IonCard routerLink="/theme">
-                                <IonImg src="http://placekitten.com/801/600"/>
-                                <IonCardHeader>
-                                    <IonCardSubtitle>
-                                        Binnen & Buiten OCW
-                                    </IonCardSubtitle>
-                                </IonCardHeader>
-                            </IonCard>
-                        </IonCol>
-                    </IonRow>
+                <CardGroup>
+                    <IonCard routerLink="/theme">
+                        <Visual icon={newspaperOutline} color="#01689b">
+                            <IonIcon color="light" icon={businessOutline}></IonIcon>
+                        </Visual>
+                        <IonCardHeader>
+                            <IonCardSubtitle>Binnen & Buiten OCW</IonCardSubtitle>
+                        </IonCardHeader>
+                    </IonCard>
 
-                    <IonRow>
-                        <IonCol>
-                            <IonCard routerLink="/theme">
-                                <IonImg src="http://placekitten.com/802/600"/>
-                                <IonCardHeader>
-                                    <IonCardSubtitle>
-                                        Ingrid van Engelshoven
-                                    </IonCardSubtitle>
-                                </IonCardHeader>
-                            </IonCard>
-                        </IonCol>
+                    <IonCard routerLink="/theme">
+                        <Visual icon={newspaperOutline} color="#01689b">
+                            <IonIcon color="light" icon={personCircleOutline}></IonIcon>
+                        </Visual>
+                        <IonCardHeader>
+                            <IonCardSubtitle>Ingrid van Engelshoven</IonCardSubtitle>
+                        </IonCardHeader>
+                    </IonCard>
 
-                        <IonCol>
-                            <IonCard routerLink="/theme">
-                                <IonImg src="http://placekitten.com/803/600"/>
-                                <IonCardHeader>
-                                    <IonCardSubtitle>
-                                        Arie Slob<br/>&nbsp;
-                                    </IonCardSubtitle>
-                                </IonCardHeader>
-                            </IonCard>
-                        </IonCol>
-                    </IonRow>
-                </IonGrid>
+                    <IonCard routerLink="/theme">
+                        <Visual icon={newspaperOutline} color="#01689b">
+                            <IonIcon color="light" icon={personCircleOutline}></IonIcon>
+                        </Visual>
+                        <IonCardHeader>
+                            <IonCardSubtitle>Arie Slob</IonCardSubtitle>
+                        </IonCardHeader>
+                    </IonCard>
+                </CardGroup>
 
 
                 <IonListHeader>Thema's</IonListHeader>
-                <IonGrid>
-                    <IonRow>
-                        <IonCol>
-                            <IonCard routerLink="/theme">
-                                <IonImg src="http://placekitten.com/800/601"/>
-                                <IonCardHeader>
-                                    <IonCardSubtitle>
-                                        Coronavirus
-                                    </IonCardSubtitle>
-                                </IonCardHeader>
-                            </IonCard>
-                        </IonCol>
+                <CardGroup>
+                    <IonCard routerLink="/theme">
+                        <Visual icon={newspaperOutline} color="#d52b1e">
+                            <IonIcon color="light" icon={chatbubbleEllipsesOutline}></IonIcon>
+                        </Visual>
+                        <IonCardHeader>
+                            <IonCardSubtitle>Coronavirus</IonCardSubtitle>
+                        </IonCardHeader>
+                    </IonCard>
 
-                        <IonCol>
-                            <IonCard routerLink="/theme">
-                                <IonImg src="http://placekitten.com/806/602"/>
-                                <IonCardHeader>
-                                    <IonCardSubtitle>
-                                        PO&VO
-                                    </IonCardSubtitle>
-                                </IonCardHeader>
-                            </IonCard>
-                        </IonCol>
-                    </IonRow>
+                    <IonCard routerLink="/theme">
+                        <Visual icon={newspaperOutline} color="#39870c">
+                            <IonIcon color="light" icon={chatbubbleEllipsesOutline}></IonIcon>
+                        </Visual>
+                        <IonCardHeader>
+                            <IonCardSubtitle>PO&VO</IonCardSubtitle>
+                        </IonCardHeader>
+                    </IonCard>
 
+                    <IonCard routerLink="/theme">
+                        <Visual icon={newspaperOutline} color="#d52b1e">
+                            <IonIcon color="light" icon={chatbubbleEllipsesOutline}></IonIcon>
+                        </Visual>
+                        <IonCardHeader>
+                            <IonCardSubtitle>MBO</IonCardSubtitle>
+                        </IonCardHeader>
+                    </IonCard>
+                    <IonCard routerLink="/theme">
+                        <Visual icon={newspaperOutline} color="#ca005d">
+                            <IonIcon color="light" icon={chatbubbleEllipsesOutline}></IonIcon>
+                        </Visual>
+                        <IonCardHeader>
+                            <IonCardSubtitle>HO&W</IonCardSubtitle>
+                        </IonCardHeader>
+                    </IonCard>
 
-                    <IonRow>
-                        <IonCol>
-                            <IonCard routerLink="/theme">
-                                <IonImg src="http://placekitten.com/800/603"/>
-                                <IonCardHeader>
-                                    <IonCardSubtitle>
-                                        MBO
-                                    </IonCardSubtitle>
-                                </IonCardHeader>
-                            </IonCard>
-                        </IonCol>
+                    <IonCard routerLink="/theme">
+                        <Visual icon={newspaperOutline} color="#ffb612">
+                            <IonIcon color="light" icon={chatbubbleEllipsesOutline}></IonIcon>
+                        </Visual>
+                        <IonCardHeader>
+                            <IonCardSubtitle>Media</IonCardSubtitle>
+                        </IonCardHeader>
+                    </IonCard>
 
-                        <IonCol>
-                            <IonCard routerLink="/theme">
-                                <IonImg src="http://placekitten.com/806/604"/>
-                                <IonCardHeader>
-                                    <IonCardSubtitle>
-                                        HO&W
-                                    </IonCardSubtitle>
-                                </IonCardHeader>
-                            </IonCard>
-                        </IonCol>
-                    </IonRow>
+                    <IonCard routerLink="/theme">
+                        <Visual icon={newspaperOutline} color="#007bc7">
+                            <IonIcon color="light" icon={chatbubbleEllipsesOutline}></IonIcon>
+                        </Visual>
+                        <IonCardHeader>
+                            <IonCardSubtitle>Cultuur</IonCardSubtitle>
+                        </IonCardHeader>
+                    </IonCard>
+                    <IonCard routerLink="/theme">
+                        <Visual icon={newspaperOutline} color="#42145f">
+                            <IonIcon color="light" icon={chatbubbleEllipsesOutline}></IonIcon>
+                        </Visual>
+                        <IonCardHeader>
+                            <IonCardSubtitle>Emancipatie</IonCardSubtitle>
+                        </IonCardHeader>
+                    </IonCard>
+                </CardGroup>
 
-
-                    <IonRow>
-                        <IonCol>
-                            <IonCard routerLink="/theme">
-                                <IonImg src="http://placekitten.com/800/605"/>
-                                <IonCardHeader>
-                                    <IonCardSubtitle>
-                                        Media
-                                    </IonCardSubtitle>
-                                </IonCardHeader>
-                            </IonCard>
-                        </IonCol>
-
-                        <IonCol>
-                            <IonCard routerLink="/theme">
-                                <IonImg src="http://placekitten.com/806/606"/>
-                                <IonCardHeader>
-                                    <IonCardSubtitle>
-                                        Cultuur
-                                    </IonCardSubtitle>
-                                </IonCardHeader>
-                            </IonCard>
-                        </IonCol>
-                    </IonRow>
-
-
-                    <IonRow>
-                        <IonCol>
-                            <IonCard routerLink="/theme">
-                                <IonImg src="http://placekitten.com/800/607"/>
-                                <IonCardHeader>
-                                    <IonCardSubtitle>
-                                        Emancipatie
-                                    </IonCardSubtitle>
-                                </IonCardHeader>
-                            </IonCard>
-                        </IonCol>
-
-                        <IonCol>
-                        </IonCol>
-                    </IonRow>
-                </IonGrid>
             </IonContent>
-        </IonPage>
-    );
-};
+            <
+            /IonPage>
+            );
+            };
 
 
-export default HomePage;
+            export default HomePage;
