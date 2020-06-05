@@ -15,24 +15,27 @@ import '@ionic/react/css/display.css';
 import './theme/variables.css';
 import HomePage from './pages/home/HomePage';
 import ThemePage from './pages/theme/ThemePage';
-import Menu from './components/menu/menu';
+import SideBar from './components/sidebar/SideBar';
+import DetailPage from './pages/detail/Detail';
 
 
-const App = () => (
-    <IonApp>
-        <IonReactHashRouter id="main">
-            <IonSplitPane contentId="main">
-                <Menu/>
-                <IonContent id="main">
-                    <IonRouterOutlet>
-                        <Route path="/home" component={HomePage} exact={true}/>
-                        <Route path="/theme" component={ThemePage} exact={true}/>
-                        <Route exact path="/" render={() => <Redirect to="/home"/>}/>
-                    </IonRouterOutlet>
-                </IonContent>
-            </IonSplitPane>
-        </IonReactHashRouter>
-    </IonApp>
-
-);
+const App = () => {
+    return (
+        <IonApp>
+            <IonReactHashRouter id="main">
+                <IonSplitPane contentId="main">
+                    <SideBar/>
+                    <IonContent id="main">
+                        <IonRouterOutlet>
+                            <Route path="/home" component={HomePage} exact={true}/>
+                            <Route path="/theme" component={ThemePage} exact={true}/>
+                            <Route path="/theme/detail" component={DetailPage} exact={true}/>
+                            <Route exact path="/" render={() => <Redirect to="/home"/>}/>
+                        </IonRouterOutlet>
+                    </IonContent>
+                </IonSplitPane>
+            </IonReactHashRouter>
+        </IonApp>
+    );
+};
 export default App;

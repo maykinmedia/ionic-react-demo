@@ -29,7 +29,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "gh-pages": "react-scripts build && git subtree push --prefix build origin gh-pages"
+    "gh-build": "react-scripts build && git add build && git commit -m \":package: - Build project.\" && git push",
+    "gh-pages": "git subtree push --prefix build origin gh-pages"
   },
   "eslintConfig": {
     "extends": "react-app"
