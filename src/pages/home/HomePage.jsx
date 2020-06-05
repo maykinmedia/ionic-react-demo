@@ -22,6 +22,7 @@ import {
 } from 'ionicons/icons';
 import Visual from '../../components/visual/Visual';
 
+
 const HomePage = () => {
     return (
         <IonPage>
@@ -163,10 +164,9 @@ const HomePage = () => {
                 </CardGroup>
 
             </IonContent>
-            <
-            /IonPage>
-            );
-            };
+        </IonPage>
+    );
+};
 
 
-            export default HomePage;
+export default HomePage;
