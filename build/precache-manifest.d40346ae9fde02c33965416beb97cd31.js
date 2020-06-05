@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1c2ae6d14f36d06297ac03a682ca9af8",
+    "revision": "4dc22f97344d34ac904925a0affc01af",
     "url": "/ionic-react-demo/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ionic-react-demo/static/css/12.8921c4c4.chunk.css"
   },
   {
-    "revision": "da2459fd68e2b6c7ae52",
-    "url": "/ionic-react-demo/static/css/main.09ef760a.chunk.css"
+    "revision": "eddac5bafdd0c1fa68c7",
+    "url": "/ionic-react-demo/static/css/main.435b3fec.chunk.css"
   },
   {
     "revision": "d96eab4cd2d8abdd2b6f",
@@ -388,7 +388,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ionic-react-demo/static/js/94.765a6291.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "da2459fd68e2b6c7ae52",
+    "revision": "eddac5bafdd0c1fa68c7",
     "url": "/ionic-react-demo/static/js/main.72cb2668.chunk.js"
   },
   {
