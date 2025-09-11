@@ -48,7 +48,7 @@
     ]
   },
   "devDependencies": {
-    "@capacitor/cli": "2.1.2"
+    "@capacitor/cli": "7.4.3"
   },
   "description": "Ionic React Demo"
 }
